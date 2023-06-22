@@ -1,6 +1,6 @@
 import './App.scss';
-import Home from './home';
-import { BrowserRouter as Router, Route, Navigate, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Navigate, Routes, Outlet } from 'react-router-dom';
+import LandingPage from './LandingPage';
 
 
 function App() {
@@ -8,9 +8,11 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LandingPage />} />
+
 
         </Routes>
+
       </div>
     </Router>
   );

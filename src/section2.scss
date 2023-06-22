@@ -1,0 +1,31 @@
+@import './fonts';
+@import './colors';
+
+
+
+.section2 {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .section2__container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .section2__content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 38px;
+            gap: 3vmin;
+            color: $color-graydark;
+            letter-spacing: -0.76px;
+        }
+    }
+}
