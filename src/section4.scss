@@ -1,0 +1,35 @@
+@import './fonts';
+@import './colors';
+
+
+.section4 {
+    width: 100vw;
+    height: 25vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .section4__container {
+        width: 30%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .button {
+            font-size: 36px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 300;
+            color: $color-graydark;
+            border: 1px solid $color-graydark;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+    }
+}
