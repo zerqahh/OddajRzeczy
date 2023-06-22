@@ -2,7 +2,7 @@
 @import './colors';
 
 .home__container {
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
 
 
@@ -13,7 +13,6 @@
         height: 100%;
         background-color: white;
         display: flex;
-
         flex-direction: column;
 
         .home__navbar {
@@ -25,60 +24,15 @@
             flex-direction: column;
             gap: 20%;
 
-            .home__navbar__top {
-                display: flex;
-                flex-direction: row;
-                width: 90%;
-                justify-content: flex-end;
-                align-items: center;
 
-                .navlogin {
-                    margin-left: 2vmin;
-                    font-size: 14px;
-                    color: $color-graylight;
-                    text-decoration: none;
-                }
-
-                .navlogin:nth-child(2) {
-                    border: 0.75px solid $color-yellow;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                }
-
-            }
-
-            .home__navbar__bottom {
-                display: flex;
-                flex-direction: row;
-                width: 90%;
-                justify-content: flex-end;
-                align-items: center;
-
-
-                p {
-                    margin-left: 6vmin;
-
-                    font-size: 1.25rem;
-                    color: $color-graydark;
-                }
-
-                p:nth-child(1) {
-                    outline: 1px solid $color-graydark;
-                    outline-offset: 10px;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                }
-            }
         }
 
 
         .home__bottom {
             width: 100%;
-            height: 85%;
-
+            height: 70%;
             display: flex;
+
 
             .home__bottom_left {
                 width: 50%;
@@ -100,7 +54,7 @@
                 height: 100%;
                 display: flex;
                 align-items: center;
-                z-index: 999;
+
 
                 .home__bottom_right_content {
                     width: 100%;
@@ -109,10 +63,11 @@
                     flex-direction: column;
                     align-items: flex-start;
 
+
                     .home__bottom_right_content_top {
 
                         width: 100%;
-                        height: 50%;
+                        height: 100%;
                         display: flex;
                         align-items: flex-end;
                         justify-content: flex-start;

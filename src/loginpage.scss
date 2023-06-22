@@ -1,0 +1,57 @@
+@import './fonts';
+@import './colors';
+
+
+.loginpage__container {
+    width: 100vw;
+    height: 100vh;
+
+    .loginpage__content {
+        width: 100%;
+        height: 85%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .loginpage__form_box {
+            width: 30%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .loginpage__form_item-top {
+                width: 100%;
+                height: 40%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 10%;
+
+                .form_item-top-top {
+                    font-size: 3rem;
+                    color: $color-graydark;
+                    letter-spacing: -0.8px;
+                }
+            }
+
+            .loginpage__form_item-bottom {
+                width: 80%;
+                height: 40%;
+                background-color: $color-white;
+            }
+
+            .loginpage__form_item-buttons-container {
+                width: 100%;
+                height: 20%;
+                display: flex;
+
+            }
+        }
+
+    }
+}

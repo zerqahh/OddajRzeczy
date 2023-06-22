@@ -1,29 +1,17 @@
 import React from 'react';
 import './home.scss';
 import Decoration from './assets/Decoration.svg'
-import HeroImage from './assets/Home-Hero-Image.jpg'
+import HeroImage from './assets/Home-Hero-Image.png'
 import { NavLink } from 'react-router-dom';
+import Navbar from './navbar';
+
+
 
 function Home() {
     return (
         <div className='home__container'>
             <div className='home__content'>
-                <div className='home__navbar'>
-                    <div className='home__navbar__top'>
-                        <>
-                            <NavLink exact to="/logowanie" className="navlogin"><p>Zaloguj</p></NavLink>
-                            <NavLink exact to="/rejestracja" className="navlogin"> <p>Załóż konto</p>
-                            </NavLink>
-                        </>
-                    </div>
-                    <div className='home__navbar__bottom'>
-                        <p>Start</p>
-                        <p>O co chodzi?</p>
-                        <p>O nas</p>
-                        <p>Fundacje i organizacje</p>
-                        <p>Kontakt</p>
-                    </div>
-                </div>
+                <Navbar />
                 <div className='home__bottom'>
 
                     <div className='home__bottom_left'>
