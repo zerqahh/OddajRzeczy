@@ -1,0 +1,147 @@
+@import './fonts';
+@import './colors';
+
+.section7 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/Background-Contact-Form.jpg);
+    background-position: center center;
+    background-size: cover;
+
+
+    .section7__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.8);
+
+        .section7__content_left {
+            width: 55%;
+            height: 100%;
+
+
+        }
+
+        .section7__content_right {
+            width: 45%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .section7__right_items {
+                width: 80%;
+                height: 60%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .right_items_top {
+                    width: 100%;
+                    height: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    font-size: 2.5rem;
+                    color: $color-graydark;
+                    gap: 3vmin;
+                }
+
+                .right_items_bottom_form {
+                    width: 80%;
+                    height: 70%;
+
+                    display: flex;
+                    flex-direction: column;
+
+                    .form-top {
+                        width: 100%;
+                        height: 30%;
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: #3C3C3C;
+
+                        .form-name {
+                            width: 49%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 2vmin;
+
+
+                        }
+
+
+                        .form-surname {
+                            width: 49%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 2vmin;
+                        }
+
+                        input {
+                            border: none;
+                            border-bottom: 2px solid #3c3c3c60;
+                            background-color: transparent;
+                            padding-bottom: 1vmin;
+
+
+                            &::placeholder {
+                                white-space: pre-wrap;
+                                color: #3c3c3c5e;
+                                font-size: 1rem;
+                                font-weight: 400;
+                            }
+
+                        }
+                    }
+
+                    .form-bottom {
+                        width: 100%;
+                        height: 70%;
+
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: #3C3C3C;
+                        display: flex;
+                        flex-direction: column;
+
+                        p {
+                            height: 10%;
+
+                        }
+
+                        textarea {
+                            width: 100%;
+                            height: 55%;
+                            border: none;
+                            border-bottom: 2px solid #3c3c3c60;
+                            background-color: transparent;
+
+
+                            &::placeholder {
+                                font-family: $font-primary;
+                                font-size: 1rem;
+                                color: #3c3c3c5e;
+                                font-weight: 400;
+                                max-height: 100%;
+                            
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

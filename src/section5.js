@@ -30,7 +30,7 @@ function Section5() {
                     </div>
                 </div>
 
-                <div className='section5__contenr_right'></div>
+                <div className='section5__content_right'></div>
 
             </div></div>
 
