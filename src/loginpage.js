@@ -18,8 +18,19 @@ function LoginPage() {
                         </div>
                     </div>
 
-                    <div className='loginpage__form_item-bottom'></div>
-                    <div className='loginpage__form_item-buttons-container'></div>
+                    <div className='loginpage__form_item-bottom'>
+                        <div className='loginpage__form_item-bottom-box'>
+                            <p>E-mail:</p>
+                            <input type="email" id="email" name="email" required />
+
+                            <p>Hasło:</p>
+                            <input type="password" id="password" name="password" required />
+
+                        </div></div>
+                    <div className='loginpage__form_item-buttons-container'>
+                        <p>Załóż konto</p>
+                        <p>Zaloguj się</p>
+                    </div>
                 </div>
             </div>
 
