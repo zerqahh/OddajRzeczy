@@ -3,6 +3,7 @@ import './navbar.scss';
 import './registerpage.scss'
 import Decoration from './assets/Decoration.svg'
 import Navbar from './navbar';
+import { NavLink } from 'react-router-dom';
 
 function RegisterPage() {
     return (
@@ -12,7 +13,7 @@ function RegisterPage() {
                 <div className='registerpage__form_box'>
 
                     <div className='registerpage__form_item-top'>
-                        <div className='form_item-top-top'><p>Zaloguj się</p></div>
+                        <div className='form_item-top-top'><p>Zarejestruj się</p></div>
 
                         <div className='registerpage__form_item-top-bottom'><img src={Decoration} style={{ width: "300px", height: "auto" }}></img>
                         </div>
@@ -31,8 +32,8 @@ function RegisterPage() {
 
                         </div></div>
                     <div className='registerpage__form_item-buttons-container'>
-                        <p>Załóż konto</p>
                         <p>Zaloguj się</p>
+                        <p>Załóż konto</p>
                     </div>
                 </div>
             </div>

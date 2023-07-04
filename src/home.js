@@ -32,7 +32,8 @@ function Home() {
                             <div className='home__bottom_right_content_bottom'>
 
                                 <div className='home__bottom_right_bottom_buttons'>
-                                    <p>ODDAJ<br /> RZECZY</p>
+
+                                    <NavLink exact to="/logowanie" style={{ textDecoration: "none" }}> <p>ODDAJ<br /> RZECZY</p></NavLink>
                                     <p>ZORGANIZUJ <br />ZBIÓRKĘ</p>
                                 </div>
                             </div>

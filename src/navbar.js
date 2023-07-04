@@ -1,6 +1,7 @@
 import React from 'react';
 import './loginpage.scss';
 import { NavLink } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 function Navbar() {
     return (
@@ -18,10 +19,44 @@ function Navbar() {
                         </div>
                         <div className='navbar__navbar__bottom'>
                             <NavLink exact to="/" className="navlogin"><p>Start</p></NavLink>
-                            <p>O co chodzi?</p>
-                            <p>O nas</p>
-                            <p>Fundacje i organizacje</p>
-                            <p>Kontakt</p>
+                            <Link
+                                activeClass="active"
+                                to="section2"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >  <p>O co chodzi?</p>
+                            </Link>
+                            <Link
+                                activeClass="active"
+                                to="section5"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >  <p>O nas</p>
+                            </Link>
+                            <Link
+                                activeClass="active"
+                                to="section6"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                <p> Fundacje i organizacje</p>
+
+                            </Link>
+                            <Link
+                                activeClass="active"
+                                to="section7"
+                                spy={true}
+                                smooth={true}
+                                offset={-20}
+                                duration={500}
+                            > <p>Kontakt</p>
+                            </Link>
                         </div>
                     </div>
 

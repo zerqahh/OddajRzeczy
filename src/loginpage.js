@@ -3,6 +3,8 @@ import './navbar.scss';
 import './loginpage.scss'
 import Decoration from './assets/Decoration.svg'
 import Navbar from './navbar';
+import { NavLink } from 'react-router-dom';
+
 
 function LoginPage() {
     return (
@@ -28,7 +30,8 @@ function LoginPage() {
 
                         </div></div>
                     <div className='loginpage__form_item-buttons-container'>
-                        <p>Załóż konto</p>
+                        <NavLink exact to="/rejestracja" className="navlogin"> <p>Załóż konto</p>
+                        </NavLink>
                         <p>Zaloguj się</p>
                     </div>
                 </div>
